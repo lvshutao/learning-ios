@@ -1,0 +1,47 @@
+PODS:
+  - MaterialComponents/BottomNavigation (68.1.0):
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - "MaterialComponents/BottomNavigation+ColorThemer (68.1.0)":
+    - MaterialComponents/BottomNavigation
+    - MaterialComponents/schemes/Color
+  - "MaterialComponents/BottomNavigation+TypographyThemer (68.1.0)":
+    - MaterialComponents/BottomNavigation
+    - MaterialComponents/schemes/Typography
+  - MaterialComponents/Ink (68.1.0):
+    - MaterialComponents/private/Math
+  - MaterialComponents/Palettes (68.1.0)
+  - MaterialComponents/private/Application (68.1.0)
+  - MaterialComponents/private/Math (68.1.0)
+  - MaterialComponents/schemes/Color (68.1.0)
+  - MaterialComponents/schemes/Typography (68.1.0)
+  - MaterialComponents/ShadowElevations (68.1.0)
+  - MaterialComponents/ShadowLayer (68.1.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/Typography (68.1.0):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+  - MDFInternationalization (1.1.0)
+
+DEPENDENCIES:
+  - MaterialComponents/BottomNavigation
+  - "MaterialComponents/BottomNavigation+ColorThemer"
+  - "MaterialComponents/BottomNavigation+TypographyThemer"
+  - MaterialComponents/Palettes
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MaterialComponents
+    - MDFInternationalization
+
+SPEC CHECKSUMS:
+  MaterialComponents: 9090ac82784a9c031ff62a44d3d9880143029d63
+  MDFInternationalization: b5b8626628abf026e630e5ebaeee563037712cbb
+
+PODFILE CHECKSUM: 264d0d35eb480e853998b2d78b51e9b7a7cc94c3
+
+COCOAPODS: 1.5.3
