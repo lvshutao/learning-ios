@@ -4,6 +4,7 @@ platform :ios, "8.0"
 
 target 'learn-ios' do
   # Pods for learn-ios
+  	pod 'MaterialComponents/BottomAppBar'
 	pod 'MaterialComponents/BottomNavigation'
 	pod 'MaterialComponents/BottomNavigation+ColorThemer'
 	pod 'MaterialComponents/BottomNavigation+TypographyThemer'

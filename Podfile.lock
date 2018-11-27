@@ -1,33 +1,62 @@
 PODS:
-  - MaterialComponents/BottomNavigation (68.1.0):
+  - MaterialComponents/BottomAppBar (70.0.0):
+    - MaterialComponents/Buttons
+    - MaterialComponents/NavigationBar
+    - MaterialComponents/private/Math
+    - MDFInternationalization
+  - MaterialComponents/BottomNavigation (70.0.0):
     - MaterialComponents/Ink
     - MaterialComponents/private/Math
     - MaterialComponents/ShadowElevations
     - MaterialComponents/ShadowLayer
     - MaterialComponents/Typography
     - MDFInternationalization
-  - "MaterialComponents/BottomNavigation+ColorThemer (68.1.0)":
+  - "MaterialComponents/BottomNavigation+ColorThemer (70.0.0)":
     - MaterialComponents/BottomNavigation
     - MaterialComponents/schemes/Color
-  - "MaterialComponents/BottomNavigation+TypographyThemer (68.1.0)":
+  - "MaterialComponents/BottomNavigation+TypographyThemer (70.0.0)":
     - MaterialComponents/BottomNavigation
     - MaterialComponents/schemes/Typography
-  - MaterialComponents/Ink (68.1.0):
+  - MaterialComponents/ButtonBar (70.0.0):
+    - MaterialComponents/Buttons
+    - MaterialComponents/private/Application
+    - MDFInternationalization
+  - MaterialComponents/Buttons (70.0.0):
+    - MaterialComponents/Ink
     - MaterialComponents/private/Math
-  - MaterialComponents/Palettes (68.1.0)
-  - MaterialComponents/private/Application (68.1.0)
-  - MaterialComponents/private/Math (68.1.0)
-  - MaterialComponents/schemes/Color (68.1.0)
-  - MaterialComponents/schemes/Typography (68.1.0)
-  - MaterialComponents/ShadowElevations (68.1.0)
-  - MaterialComponents/ShadowLayer (68.1.0):
+    - MaterialComponents/private/Shapes
     - MaterialComponents/ShadowElevations
-  - MaterialComponents/Typography (68.1.0):
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+    - MDFInternationalization
+    - MDFTextAccessibility
+  - MaterialComponents/Ink (70.0.0):
+    - MaterialComponents/private/Math
+  - MaterialComponents/NavigationBar (70.0.0):
+    - MaterialComponents/ButtonBar
+    - MaterialComponents/private/Math
+    - MaterialComponents/Typography
+    - MDFInternationalization
+    - MDFTextAccessibility
+  - MaterialComponents/Palettes (70.0.0)
+  - MaterialComponents/private/Application (70.0.0)
+  - MaterialComponents/private/Math (70.0.0)
+  - MaterialComponents/private/Shapes (70.0.0):
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+  - MaterialComponents/schemes/Color (70.0.0)
+  - MaterialComponents/schemes/Typography (70.0.0)
+  - MaterialComponents/ShadowElevations (70.0.0)
+  - MaterialComponents/ShadowLayer (70.0.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/Typography (70.0.0):
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
   - MDFInternationalization (1.1.0)
+  - MDFTextAccessibility (1.2.0)
 
 DEPENDENCIES:
+  - MaterialComponents/BottomAppBar
   - MaterialComponents/BottomNavigation
   - "MaterialComponents/BottomNavigation+ColorThemer"
   - "MaterialComponents/BottomNavigation+TypographyThemer"
@@ -37,11 +66,13 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - MaterialComponents
     - MDFInternationalization
+    - MDFTextAccessibility
 
 SPEC CHECKSUMS:
-  MaterialComponents: 9090ac82784a9c031ff62a44d3d9880143029d63
+  MaterialComponents: 7c107af5ae6566de2f1ba94bde3db99d1b874bab
   MDFInternationalization: b5b8626628abf026e630e5ebaeee563037712cbb
+  MDFTextAccessibility: 94098925e0853551c5a311ce7c1ecefbe297cdb6
 
-PODFILE CHECKSUM: 264d0d35eb480e853998b2d78b51e9b7a7cc94c3
+PODFILE CHECKSUM: 749c183bd719bd94f3d36d774ddfecd08452b622
 
 COCOAPODS: 1.5.3

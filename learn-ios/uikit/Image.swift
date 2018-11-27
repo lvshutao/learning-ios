@@ -1,5 +1,8 @@
 import UIKit
 
+/*
+ 还有一部分内容在 ImageView.swift 中
+ */
 class Image: UIViewController {
     
     override func viewDidLoad() {

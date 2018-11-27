@@ -1,7 +1,8 @@
 /*
  https://material.io/develop/ios/components/bottomnavigation/
- 存在问题，UITabBarItem 如何关联控制器
+ 记住这句话：MDCBottomNavigationBar can be added to a view hierarchy like any UIView
  
+ https://www.yudiz.com/material-design-components-for-ios/
  */
 
 import UIKit
@@ -14,7 +15,7 @@ import MaterialComponents.MaterialColorScheme
 // 颜色
 import MaterialComponents.MaterialPalettes
 
-class MaterialTabBarSimple: UIViewController {
+class MaterialTabBarSimple: UITabBarController {
     
     let bottomNavBar = MDCBottomNavigationBar()
     var colorScheme = MDCSemanticColorScheme()
@@ -67,14 +68,33 @@ class MaterialTabBarSimple: UIViewController {
         bottomNavBar.items = [ tabBarItem1, tabBarItem2, tabBarItem3 ]
         
         // Select a bottom navigation bar item.
-        bottomNavBar.selectedItem = tabBarItem2;
+        bottomNavBar.selectedItem = tabBarItem1;
+        bottomNavBar.delegate = self
         
         // 应用主题颜色
-        MDCBottomNavigationBarColorThemer.applySemanticColorScheme(colorScheme,
-                                                                   toBottomNavigation: bottomNavBar)
+//        MDCBottomNavigationBarColorThemer.applySemanticColorScheme(colorScheme,
+//                                                                   toBottomNavigation: bottomNavBar)
         // 可选，修改标签文本
-        bottomNavBar.selectedItemTintColor = MDCPalette.blue.tint300
-        bottomNavBar.unselectedItemTintColor = MDCPalette.yellow.tint300
+//        bottomNavBar.selectedItemTintColor = MDCPalette.blue.tint300
+//        bottomNavBar.unselectedItemTintColor = MDCPalette.yellow.tint300
+        
+        
+        let statusVc = TabBarMoreViewController()
+        statusVc.title = "Status"
+        
+        let eventsVc = TabBarMoreViewController()
+        eventsVc.title = "Events"
+        
+        let contactsVc = TabBarMoreViewController()
+        contactsVc.title = "Contacts"
+        
+        self.viewControllers = [statusVc, eventsVc, contactsVc]
     }
 }
 
+extension MaterialTabBarSimple: MDCBottomNavigationBarDelegate {
+    func bottomNavigationBar(_ bottomNavigationBar: MDCBottomNavigationBar, didSelect item: UITabBarItem) {
+        print("did select item \(item.tag)")
+        self.selectedViewController = self.viewControllers![item.tag]
+    }
+}

@@ -19,16 +19,13 @@ class MaterialPesto: UITabBarController {
     
     override func viewDidLoad() {
         
-        let vc01 = ViewController()
-        vc01.view.backgroundColor = UIColor.red
+        let vc01 = TabBarMoreViewController()
         vc01.tabBarItem.title = "Vc01"
         
-        let vc02 = ViewController()
-        vc02.view.backgroundColor = UIColor.yellow
+        let vc02 = TabBarMoreViewController()
         vc02.tabBarItem.title = "Vc02"
         
-        let vc03 = ViewController()
-        vc03.view.backgroundColor = UIColor.blue
+        let vc03 = TabBarMoreViewController()
         vc03.tabBarItem.title = "Vc03"
         
         self.viewControllers = [

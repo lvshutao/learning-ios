@@ -30,6 +30,9 @@ class TableViewAll : UIViewController {
         myTableView.tableFooterView = UIView()
         
         addRefresh()
+        
+        // 滚动到指定位置
+        // https://stackoverflow.com/questions/28043632/auto-scrolling-to-a-cell-with-a-specific-value
     }
 }
 

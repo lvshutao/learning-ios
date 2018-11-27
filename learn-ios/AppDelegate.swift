@@ -25,8 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        如果同时删除 Luanch File，那么可能无法全屏
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
+        self.window?.backgroundColor = UIColor.white
 
-        window?.rootViewController = ImagePicker()
+//        window?.rootViewController = Navigation(first:BarButtonItem()).nav
+        window?.rootViewController = ActivityView()
         return true
     }
 

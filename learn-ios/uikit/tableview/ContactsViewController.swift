@@ -37,7 +37,7 @@ class ContactsViewController: UIViewController {
         // 布局 Auto Layout，并且在 safeAreaLayoutGuide 内
         contactsTableView.translatesAutoresizingMaskIntoConstraints = false
         if #available(iOS 11.0, *) {
-            contactsTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+            contactsTableView.topAnchor.constraint(equalTo:view.safeAreaLayoutGuide.topAnchor).isActive = true
             contactsTableView.leftAnchor.constraint(equalTo:view.safeAreaLayoutGuide.leftAnchor).isActive = true
             contactsTableView.rightAnchor.constraint(equalTo:view.safeAreaLayoutGuide.rightAnchor).isActive = true
             contactsTableView.bottomAnchor.constraint(equalTo:view.safeAreaLayoutGuide.bottomAnchor).isActive = true
